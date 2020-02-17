@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"> </property>
+        <property name="hibernate.connection.url"> jdbc:mysql://localhost/ArticleManagement?createDatabaseIfNotExist=true </property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <mapping class="articlemanagementsystem.model.User" />
+        <mapping class="articlemanagementsystem.model.Article" />
+        <mapping class="articlemanagementsystem.model.Category" />
+        <mapping class="articlemanagementsystem.model.Role" />
+        <mapping class="articlemanagementsystem.model.Tag" />
+    </session-factory>
+</hibernate-configuration>
